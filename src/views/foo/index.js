@@ -10,11 +10,11 @@ import './style.css'
 // 导出类
 export default class {
   mount(container) {
-    document.title = 'bar'
+    document.title = 'foo'
     container.innerHTML = template
-    container.querySelector('.bar__gofoo').addEventListener('click', () => {
+    container.querySelector('.foo__gobar').addEventListener('click', () => {
       // 调用router.go方法加载 /foo 页面
-      g.router.go('/foo')
+      g.router.go('/bar')
     })
   }
 }
